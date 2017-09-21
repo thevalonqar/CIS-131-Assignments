@@ -1,0 +1,33 @@
+/* reset styles*/
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: url("leopard.png");
+  font-family: 'Bree Serif', serif;
+}
+
+h1  {
+  background-color: black;
+  color: white !important;
+  font-size: 48px !important;
+}
+
+#bigImg {
+  margin-top: 10%;
+  padding: 10px;
+  border: 10px solid transparent;
+  border-image: url("sunburst.jpg") 10% round;
+}
+
+#imgGallery {
+  margin: 2%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  background-color: #FC814A;
+}
+
+.img-thumbnail:hover {
+  border: 0;
+  background-color: black;
+}

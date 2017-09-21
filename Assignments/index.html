@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!--
+  CIS 131 - W01
+  Image Swapping
+
+  Author:   James McAdoo
+  Date:     9/18/17
+ -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Swapping</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <header>
+        <h1 class="text-center">DJ Ruby Rhod</h1>
+    </header>
+    <div class="container">
+        <img src="img1.jpg" alt="Ruby Rhod" class="img-responsive center-block" id="bigImg" />
+    </div>
+    <div class="container-fluid" id="imgGallery">
+      <div class="col-md-4">
+        <img src="img1.jpg" alt="Ruby Rhod" class="img-thumbnail" id="leftImage" onclick="changeImage(0)"/>
+      </div>
+      <div class="col-md-4">
+        <img src="img2.jpg" alt="Ruby Rhod" class="img-thumbnail" id="centerImage" onclick="changeImage(1)" />
+      </div>
+      <div class="col-md-4">
+        <img src="img3.jpg" alt="Ruby Rhod" class="img-thumbnail" id="rightImage" onclick="changeImage(2)" />
+      </div>
+    </div>
+
+
+    <!-- My functions -->
+    <script>
+    var images = ["img1.jpg", "img2.jpg", "img3.jpg"];
+    document.getElementById('leftImage').src = images[0];
+    document.getElementById('centerImage').src = images[1];
+    document.getElementById('rightImage').src = images[2];
+
+      function changeImage(i) {
+        var index = i;
+        document.getElementById('bigImg').src = images[i];
+      }
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

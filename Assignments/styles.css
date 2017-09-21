@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  background-image: url("leopard.png");
+  background-image: url("../Assignments/images/leopard.png");
   font-family: 'Bree Serif', serif;
 }
 
@@ -17,7 +17,7 @@ h1  {
   margin-top: 10%;
   padding: 10px;
   border: 10px solid transparent;
-  border-image: url("sunburst.jpg") 10% round;
+  border-image: url("../Assignments/images/sunburst.jpg") 10% round;
 }
 
 #imgGallery {

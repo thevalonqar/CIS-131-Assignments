@@ -11,6 +11,8 @@ h1  {
   background-color: black;
   color: white !important;
   font-size: 48px !important;
+  padding: 5px;
+  border: 2px solid white;
 }
 
 #bigImg {
@@ -25,6 +27,7 @@ h1  {
   padding-top: 5%;
   padding-bottom: 2%;
   background-color: #FC814A;
+  border: 2px solid white;
 }
 
 .img-thumbnail:hover {

@@ -50,23 +50,27 @@
     <!-- My functions -->
     <script>
     var images = ["../Assignments/images/img1.jpg", "../Assignments/images/img2.jpg", "../Assignments/images/img3.jpg"];
-    // document.getElementById('leftImage').src = images[0];
-    // document.getElementById('centerImage').src = images[1];
-    // document.getElementById('rightImage').src = images[2];
+    var mainPic = document.getElementById('bigImg');
     var i = 0
       function changeImage(i) {
-        if (i < 2) {
-          document.getElementById('bigImg').src = images[i];
-          i++
+          mainPic.src = images[i];
         }
-        else {
-          document.getElementById('bigImg').src = images[i];
-          i = 0;
+      
+      function intervalImage() {
+        if ( i == 0 ){
+          mainPic.src = images[i];
         }
-        
+        else if (i == 1 ){
+          mainPic.src = images[i];
+        }
+        else if ( i==2 ){
+          mainPic.src = images[i];
+          i = -1;
+        }
+        i++;
       }
 
-      setInterval (changeImage, 3000)
+      setInterval (intervalImage, 2000);
 
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
